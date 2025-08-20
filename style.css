@@ -11,7 +11,7 @@ main {
   height: auto;
   margin: 0 auto;
   padding: 4rem;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 h1 {
   text-align: center;
@@ -43,9 +43,16 @@ h2 {
 .faq button:hover {
   background-color: azure;
 }
-.faq button:active {
-  background-color: azure;
+.accordion i {
+  transition: transform 0.3s ease;
 }
+
+.accordion.active i {
+  /* :active applies only while clicking it, once you release, it goes back to normal. 
+      .active User-defined class,applied via HTML/Js, stays applied until removed.*/
+  transform: rotate(180deg); /* point up */
+}
+
 .faq p {
   display: none;
   font-size: 2rem;
