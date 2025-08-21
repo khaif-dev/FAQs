@@ -1,24 +1,21 @@
-// Adding DOM elements
-btns = document.querySelectorAll(".accordion")
+const btns = document.querySelectorAll(".accordion");
 
-// Adding event listeners
 btns.forEach(button => {
-  button.addEventListener('click', function(){
+  button.addEventListener("click", function () {
+    const content = this.nextElementSibling; // paragraph element
 
-    var content = this.nextElementSibling //paragraph element
-    btns.forEach(btn => {
-      btn.classList.remove("active");
-      btn.nextElementSibling.style.display = 'none';
-    });
-
-    if(content.style.display === 'block'){
-      content.style.display = 'none';
+    if (this.classList.contains("active")) {
+      // content already open, close it
       this.classList.remove("active");
-    }
-    else{
-      content.style.display = 'block'
+      content.style.display = "none";
+    } else {
+      // open one content at a time 
+      btns.forEach(btn => {
+        btn.classList.remove("active");
+        btn.nextElementSibling.style.display = "none";
+      });
       this.classList.add("active");
+      content.style.display = "block";
     }
-  })  
+  });
 });
-
