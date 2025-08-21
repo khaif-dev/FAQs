@@ -3,8 +3,8 @@
 An interactive FAQ accordion built with HTML, CSS, and JavaScript.  
 This project demonstrates how to create expandable/collapsible sections with smooth toggle animations.
 
-## 🌐 Live Demo
-👉 [View the FAQ Accordion here](https://your-username.github.io/faq-accordion/)  
+👉 [View the FAQ Accordion here](https://khaif-dev.github.io/FAQs/)  
+
 
 ## 🚀 Features
 **Accordion functionality**:
@@ -22,9 +22,9 @@ This project demonstrates how to create expandable/collapsible sections with smo
   - JavaScript 
   
 ## 📂 Project Structure
-  ├── index.html : Markup for FAQ accordion
-  ├── style.css : Styling for FAQ layout
-  └── script.js : JavaScript for accordion toggle
+  - index.html : Markup for FAQ accordion
+  - style.css : Styling for FAQ layout
+  - script.js : JavaScript for accordion toggle
 
 ## 🖥️ How  to use
   Clone the repository
